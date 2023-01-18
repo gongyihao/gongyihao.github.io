@@ -1,33 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no"><meta name=apple-mobile-web-app-capable content=yes><meta name=mobile-web-app-capable content=yes><meta name=x5-fullscreen content=true><meta name=apple-mobile-web-app-title content=WhatsCoin><meta name=apple-touch-fullscreen content=yes><meta content=summary_large_image name=twitter:card><meta property=og:title class=ogTitle content="WhatsCoin - The Data Analytics Platform on Blockchain"><meta property=og:description class=ogDescription content="WhatsCoin analyzes 100 million+ labelled wallet addresses and their activities on Ethereum. Follow Smart Money to discover alpha opportunities."><meta property=og:site_name content=WhatsCoin><meta property=og:type content=website><meta property=og:image class=ogImg content=https://static.whatscoin.com.cn/image/logo.png><meta property=og:url content=https://www.whatscoin.com><title>WhatsCoin - The Data Analytics Platform on Blockchain</title><meta name=keywords class=whkeywords content="WhatsCoin, nft, blockchain, smart money, free mint, crypto, labelled address, trade transaction, nft market, nft stats."><meta name=description class=whdescription content="WhatsCoin analyzes 100 million+ labelled wallet addresses and their activities on Ethereum. Follow Smart Money to discover alpha opportunities."><link rel=canonical href=https://www.whatscoin.com/ ><link rel=alternate hreflang=en href=https://www.whatscoin.com/ ><link rel=icon href=/favicon.ico><link href=https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.15.5/theme-chalk/index.min.css rel=stylesheet><script>!function(){function s(t){t=t||{},this.$options={mode:t.mode||"multiple",current:window.localStorage.getItem("hbc:theme")||t.current||"light",selected:window.localStorage.getItem("hbc:theme")||t.current||"light"},this.$isSupport=window.matchMedia&&/(ipad|ios|iphone|mac)/i.test(navigator.userAgent)&&(!0===matchMedia("(prefers-color-scheme: dark)").matches||!0===matchMedia("(prefers-color-scheme: light)").matches),this.$callback=[],this.$dark=window.matchMedia?matchMedia("(prefers-color-scheme: dark)"):null,"single"===this.$options.mode||"auto"!==this.$options.current?("auto"!==this.$options.mode&&-1!==s.supports.indexOf(this.$options.current)||(this.$options.current=this.$options.selected=s.supports[0]),this.setAttr()):this.$isSupport?this.resetDark():(s.supports.splice(s.supports.indexOf("auto"),1),this.$options.current=this.$options.selected=s.supports[0],this.setAttr()),this.emit("init")}s.prototype.set=function(t){"single"!==this.$options.mode&&("auto"!==t&&-1<s.supports.indexOf(t)?(this.$dark&&(this.$dark.onchange=function(){}),this.$options.current=this.$options.selected=t,this.setAttr(),window.localStorage.setItem("hbc:theme",t),this.emit("manual")):"auto"===t&&this.$isSupport&&(this.resetDark(),this.$options.selected=t,window.localStorage.setItem("hbc:theme",t),this.emit("manual")))},s.prototype.resetDark=function(){var e=this;this.$dark.onchange=function(t){e.$options.current=t.media.indexOf("dark")&&t.matches?"dark":"light",e.setAttr(),e.emit("system")},this.$options.current=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light",this.setAttr()},s.prototype.setAttr=function(){window.hbc.prerender||document.documentElement.setAttribute("data-theme",this.$options.current)},s.prototype.on=function(t){this.$callback.push({callback:t})},s.prototype.emit=function(t){for(var e=this.$callback,s=0;s<e.length;s++)e[s].callback({from:t,theme:this.$options.current})},s.prototype.off=function(t){for(var e=this.$callback,s=0;s<e.length;s++)t===e[s].callback&&e.splice(s--,1)},s.prototype.get=function(t){var e=null;switch(t){case"list":e="single"===this.$options.mode?[this.$options.current]:s.supports;break;case"current":e=this.$options.current;break;case"selected":e=this.$options.selected}return e},s.supports=["light","dark","auto"],window.hbc=window.hbc||{},window.hbc.theme=new s}()</script><script>httpTohttps()
+        let url = location.href || "";
+        if (filterUrl(url)) {
+            function gtag() {
+                return true;
+            }
+        } else {
+            let scriptTag = document.createElement("script");
+            let head = document.querySelector("head");
+            scriptTag.type = "text/javascript";
+            scriptTag.src =
+                "https://www.googletagmanager.com/gtag/js?id=G-BHZ93QHLCG";
+            scriptTag.async = "async";
+            head.appendChild(scriptTag);
+            window.dataLayer = window.dataLayer || [];
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giao</title>
-    <style>
-        div {
-            padding: 20px;
+            function gtag() {
+                dataLayer.push(arguments);
+                return false;
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-BHZ93QHLCG");
         }
-
-        iframe {
-            background: white !important;
-            margin-top: -1.5em !important;
-            border: 1px solid blue;
-            border-radius: 0px;
-            padding: 1px;
-            box-shadow: 10px 10px blue;
+        function filterUrl(url) {
+            if (url.includes("test") || url.includes("tingyun") || url.includes("192.168.") || url.includes("localhost:") || url.includes("uat.whatscoin") || url.includes("bigdata.whatscoin")) {
+                return true;
+            } else {
+                return false;
+            }
         }
-    </style>
-</head>
-
-<body>
-    <div><iframe src="https://dune.xyz/embeds/21114/43465/VTtu09TcJaY8qNxBfdL2kDrnBbzP6m2PRejuilu1" width="100%"
-            height="360" frameborder="0"></iframe></div>
-    <div><iframe src="https://dune.com/embeds/515747/973410/87817aa5-36f4-485d-aab7-d9b0c9e210a2" width="100%"
-            height="360" frameborder="0"></iframe></div>
-
-</body>
-
-</html>
+        function httpTohttps() {
+            var reg = /^(192.168.)/;
+            if (window.location.hostname !== 'localhost' && !reg.test(window.location.hostname)) {
+                // 判断非本地server时 http强制转换成https
+                var targetProtocol = "https:";
+                if (window.location.protocol != targetProtocol) {
+                    window.location.href = targetProtocol +
+                        window.location.href.substring(window.location.protocol.length);
+                }
+            }
+        }</script><link href=/static/css/defaultVendors~app~c913e6bf.71a233fb.css rel=stylesheet><link href=/static/css/defaultVendors~app~ce4e8a31.98ceb446.css rel=stylesheet><link href=/static/css/app~e2e93592.96ecd05a.css rel=stylesheet></head><body><noscript><strong>We're sorry but whatscoin doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script crossorigin type=text/javascript src=https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.18/marked.min.js></script><script crossorigin type=text/javascript src=https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js></script><script crossorigin type=text/javascript src=https://cdnjs.cloudflare.com/ajax/libs/echarts/5.3.1/echarts.min.js></script><script crossorigin type=text/javascript src=https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.15.5/index.js></script><script type=text/javascript src=/static/js/defaultVendors~app~c913e6bf.515c9496.js></script><script type=text/javascript src=/static/js/defaultVendors~app~ce4e8a31.c25bf1c4.js></script><script type=text/javascript src=/static/js/app~e2e93592.dd75c853.js></script></body></html>
